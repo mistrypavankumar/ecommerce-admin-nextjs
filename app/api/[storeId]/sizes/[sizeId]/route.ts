@@ -88,7 +88,7 @@ export async function DELETE(
     }
 
     if (!params.sizeId) {
-      return new NextResponse("Billboard id is required", { status: 400 });
+      return new NextResponse("Size id is required", { status: 400 });
     }
 
     const storeByUserId = await prismadb.store.findFirst({
